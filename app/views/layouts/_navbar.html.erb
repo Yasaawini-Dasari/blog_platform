@@ -1,0 +1,14 @@
+<nav style="padding:10px; background:#eee;">
+  <% if user_signed_in? %>
+    <span>Welcome, <%= current_user.email %></span> |
+    <%= link_to "Posts", posts_path %> |
+    <%= link_to "Import CSV", import_csv_posts_path, method: :get %> |
+    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+
+  <% else %>
+    <%= link_to "Home", root_path %> |
+    <%= link_to "Sign Up", new_user_registration_path %> |
+    <%= link_to "Login", new_user_session_path %>
+  <% end %>
+</nav>
+<hr>

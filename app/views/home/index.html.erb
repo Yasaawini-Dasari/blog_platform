@@ -1,0 +1,14 @@
+
+
+<h1>Welcome to Blogging Platform</h1>
+
+<% if user_signed_in? %>
+  <p>You are logged in as <%= current_user.email %></p>
+  <%= link_to "View Posts", posts_path %>
+<% else %>
+  <p>Please sign up or login.</p>
+<% end %>
+
+
+
+
