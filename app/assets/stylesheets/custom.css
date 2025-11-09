@@ -59,6 +59,7 @@ button:hover, input[type="submit"]:hover, a.button:hover {
 
 a {
   text-decoration: none;
+  padding:0 10px;
 }
 
 .flash {
@@ -75,4 +76,8 @@ a {
 .flash.alert {
   background: #f8d7da;
   color: #721c24;
+}
+
+.button_to{
+  margin : 0 10px;
 }
